@@ -1,5 +1,5 @@
 <h1>
-<img src="https://raw.githubusercontent.com/kaklise/wntr/logo/documentation/figures/logo.jpg" width="375">
+<img src="https://raw.githubusercontent.com/usepa/wntr/main/documentation/figures/logo.jpg" width="375">
 </h1><br>
 
 The RTD branch redirects
