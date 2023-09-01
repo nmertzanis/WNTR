@@ -3,6 +3,6 @@
 </h1><br>
 
 The RTD branch redirects
-https://wntr.readthedocs.io/ to https://usepa.github.io/WNTR/.
+https://wntr.readthedocs.io/ to https://usepa.github.io/WNTR/
 
-See https://github.com/USEPA/WNTR/blob/main/documentation/index.rst
+See documentation/index.rst
