@@ -19,4 +19,6 @@ temp*
 
 examples/*.inp
 wntr/tests/*.png
-
+.idea/
+*.xml
+venv/
