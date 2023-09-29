@@ -38,7 +38,7 @@ following commands in a terminal, command line, or PowerShell prompt.
 
 .. |pypi version| image:: https://img.shields.io/pypi/v/wntr.svg?maxAge=3600
 .. _pypi version: https://pypi.org/project/wntr/
-.. |pypi downloads| image:: https://pepy.tech/badge/wntr
+.. |pypi downloads| image:: https://static.pepy.tech/badge/wntr
 .. _pypi downloads: https://pepy.tech/project/wntr
 .. |anaconda version| image:: https://anaconda.org/conda-forge/wntr/badges/version.svg 
 .. _anaconda version: https://anaconda.org/conda-forge/wntr
@@ -152,7 +152,7 @@ Step 2: Install WNTR
 	   
 	  .. note:: 
 	     WNTR includes C++ code that is built into shared object files (e.g., pyd for Windows)
-	     during the setup process. This requires that the user has a C++ compiler on their path.
+	     during the setup process. This requires that the user has a C++ compiler (e.g., Visual Studio C++, GNU C++, MinGW) on their path.
 	     No compiler is needed when installing WNTR through PyPI (Option 1) or conda (Option 2). 
    
 Step 3: Test installation
@@ -167,6 +167,12 @@ Step 3: Test installation
 	If WNTR is **not** installed properly, the user will see the following ImportError::
 	
 		ImportError: No module named wntr
+	
+	To verify the version of WNTR that has been installed, continue in the Python console and run::
+	
+		print(wntr.__version__)
+		
+	This will print the WNTR version to the screen, for example, "1.0.0".
 	
 	See :ref:`getting_started` for a simple example that can also be used to test installation.
 	A full set of software tests can also be run locally to ensure proper installation, see :ref:`software_tests` for more details.
@@ -193,11 +199,11 @@ and building the documentation.
 
 .. note:: 
    WNTR includes C++ code that is built into shared object files (e.g., pyd for Windows)
-   during the setup process. This requires that the developer has a C++ compiler on their path.
+   during the setup process. This requires that the developer has a C++ compiler located in a folder specified in their PATH.
    When installing WNTR through PyPI or conda, the shared object files do not need to be built 
    and no compiler is needed.
 
-If the developer does NOT have a C++ compiler, or would rather use prebuilt wheels,
+If the developer does NOT have a C++ compiler, or would rather use prebuilt wheels (a pre-built binary package format for Python modules and libraries),
 the shared object files can be downloaded from WNTR GitHub Actions using the following steps:
 
 * Clone and setup the main branch of WNTR from the GitHub 
