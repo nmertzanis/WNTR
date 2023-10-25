@@ -39,7 +39,7 @@ wall reactions are included.
 
 [PUMPS]
 ;ID              	Node1           	Node2           	Parameters
- 9               	9               	10              	HEAD 1	PATTERN Plong	;
+ 9               	9               	10              	HEAD 1	PATTERN pump_9	;
 
 [VALVES]
 ;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
@@ -62,14 +62,14 @@ wall reactions are included.
 ;
  P1              	1           
 ;
- Plong           	0           	0           	0           	0           	0           	0           
- Plong           	0           	0           	0           	0           	0           	0           
- Plong           	0           	0           	0           	0           	0           	0           
- Plong           	0           	0           	0           	0           	0           	0           
+ pump_9          	0           	0           	0           	0           	0           	0           
+ pump_9          	0           	0           	0           	0           	0           	0           
+ pump_9          	0           	0           	0           	0           	0           	0           
+ pump_9          	0           	0           	0           	0           	0           	0           
 
 [CURVES]
 ;ID              	X-Value     	Y-Value
-;PUMP: PUMP: PUMP: PUMP: Pump Curve for Pump 9
+;PUMP: PUMP: PUMP: PUMP: PUMP: Pump Curve for Pump 9
  1               	1500        	250         
 
 [CONTROLS]
@@ -78,7 +78,9 @@ wall reactions are included.
 
 
 
+
 [RULES]
+
 
 
 

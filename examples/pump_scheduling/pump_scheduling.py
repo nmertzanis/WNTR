@@ -8,12 +8,12 @@ import wntr
 import time
 
 # Create a water network model
-inp_file = '../networks/Anytown.inp'
+inp_file = '../networks/FOS_pump_0.inp'
 wn = wntr.network.WaterNetworkModel(inp_file)
 
 # Graph the network
 wntr.graphics.plot_network(wn, title=wn.name)
-
+print(wn.pattern_name_list)
 # Simulate hydraulics
 start1 = time.time()
 sim = wntr.sim.EpanetSimulator(wn)

@@ -3,6 +3,8 @@
 import wntr
 import sys
 import time
+
+from wntr.network import Pattern
 from ..pump_scheduling.get_set import *
 
 
@@ -84,8 +86,9 @@ def calculate_objective_function(wn, result, critical_nodes, pump_id_list):
     return total_energy, total_cost, critical_node_pressures
 
 
-def run_WNTR_model(file, pump_pat_id, new_pattern_values, electricity_values):
+def run_WNTR_model(file, new_pattern_values, electricity_values):
     wn = make_network(file)
+
 
     # Minimum and required pressure for water network
     wn.options.hydraulic.required_pressure = 14
@@ -99,7 +102,8 @@ def run_WNTR_model(file, pump_pat_id, new_pattern_values, electricity_values):
 
     set_pump_efficiency(wn)
 
-    change_pumping_pattern(wn, pump_pat_id, new_pattern_values)
+    pump_pattern_ids = ['pump_' + item for item in wn.pump_name_list]
+    change_pumping_pattern(wn, pump_pattern_ids, new_pattern_values)
 
     result = simulate_network(wn)
 

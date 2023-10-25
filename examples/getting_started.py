@@ -7,9 +7,25 @@ from matplotlib import pyplot as plt
 import wntr
 
 # Create a water network model
-inp_file = 'networks/Tutorial.inp'
+inp_file = 'networks/FOS_pump_0.inp'
 wn = wntr.network.WaterNetworkModel(inp_file)
-
+wn.options.hydraulic.viscosity = 1.0
+wn.options.hydraulic.specific_gravity = 1.0
+wn.options.hydraulic.demand_multiplier = 1.0
+wn.options.hydraulic.demand_model = 'DD'
+wn.options.hydraulic.minimum_pressure = 0
+wn.options.hydraulic.required_pressure = 1
+wn.options.hydraulic.pressure_exponent = 0.5
+wn.options.hydraulic.trials = 50
+wn.options.hydraulic.accuracy = 0.001
+wn.options.hydraulic.unbalanced = 'CONTINUE'
+wn.options.hydraulic.unbalanced_value = 10
+wn.options.hydraulic.checkfreq = 2
+wn.options.hydraulic.maxcheck = 10
+wn.options.hydraulic.damplimit = 0.0
+wn.options.hydraulic.headerror = 0.0
+wn.options.hydraulic.flowchange = 0.0
+wn.options.hydraulic.inpfile_units = "LPS"
 # Graph the network
 wntr.graphics.plot_network(wn, title=wn.name)
 

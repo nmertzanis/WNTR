@@ -1,0 +1,303 @@
+[TITLE]
+foss_poly_1 -- Bragalli, D'Ambrosio, Lee, Lodi, Toth (2008)
+
+[JUNCTIONS]
+;ID              	Elev        	Demand      	Pattern         
+ 1               	65.15       	0.1478      	demand_pattern_two_person	;
+ 2               	64.4        	0.989       	demand_pattern_family	;
+ 3               	63.35       	0.354       	demand_pattern_two_person	;
+ 4               	62.5        	0.8016      	demand_pattern_two_person	;
+ 5               	61.24       	0.4664      	demand_pattern_two_person	;
+ 6               	65.4        	1.7182      	demand_pattern_one_person	;
+ 7               	67.9        	0.5896      	demand_pattern_one_person	;
+ 8               	66.5        	0.8364      	demand_pattern_one_person	;
+ 9               	66          	1.806       	demand_pattern_one_person	;
+ 10              	64.17       	1.2624      	demand_pattern_family	;
+ 11              	63.7        	1.6996      	demand_pattern_one_person	;
+ 12              	62.64       	1.6754      	demand_pattern_one_person	;
+ 13              	61.9        	0.3268      	demand_pattern_one_person	;
+ 14              	62.6        	1.7414      	demand_pattern_two_person	;
+ 15              	63.5        	0.654       	demand_pattern_one_person	;
+ 16              	64.3        	1.4742      	demand_pattern_two_person	;
+ 17              	65.5        	0.2908      	demand_pattern_one_person	;
+ 18              	64.1        	1.6018      	demand_pattern_two_person	;
+ 19              	62.9        	1.4976      	demand_pattern_two_person	;
+ 20              	62.83       	1.4662      	demand_pattern_two_person	;
+ 21              	62.8        	1.8682      	demand_pattern_one_person	;
+ 22              	63.9        	0.5742      	demand_pattern_family	;
+ 23              	64.2        	1.743       	demand_pattern_family	;
+ 24              	67.5        	0.712       	demand_pattern_two_person	;
+ 25              	64.4        	1.6148      	demand_pattern_family	;
+ 26              	63.4        	0.7126      	demand_pattern_two_person	;
+ 27              	63.9        	1           	demand_pattern_family	;
+ 28              	65.65       	0.3056      	demand_pattern_one_person	;
+ 29              	64.5        	0.1674      	demand_pattern_two_person	;
+ 30              	64.1        	0.5892      	demand_pattern_one_person	;
+ 31              	64.4        	1.3148      	demand_pattern_family	;
+ 32              	64.2        	1.0506      	demand_pattern_two_person	;
+ 33              	64.6        	1.1762      	demand_pattern_one_person	;
+ 34              	64.7        	0.2106      	demand_pattern_two_person	;
+ 35              	65.43       	0.4822      	demand_pattern_one_person	;
+ 36              	65.9        	1.5706      	demand_pattern_family	;
+
+[RESERVOIRS]
+;ID              	Head        	Pattern         
+ 37              	40          	                	;
+
+[TANKS]
+;ID              	Elevation   	InitLevel   	MinLevel    	MaxLevel    	Diameter    	MinVol      	VolCurve        	Overflow
+ 38              	70          	20          	0           	50          	5           	0           	                	;
+
+[PIPES]
+;ID              	Node1           	Node2           	Length      	Diameter    	Roughness   	MinorLoss   	Status
+ 1               	1               	17              	132.76      	40.8        	150         	0           	Open  	;
+ 2               	17              	2               	374.68      	16          	150         	0           	Open  	;
+ 3               	2               	3               	119.74      	16          	150         	0           	Open  	;
+ 4               	3               	4               	312.72      	16          	150         	0           	Open  	;
+ 5               	4               	5               	289.09      	26          	150         	0           	Open  	;
+ 6               	5               	6               	336.33      	16          	150         	0           	Open  	;
+ 7               	6               	7               	135.81      	16          	150         	0           	Open  	;
+ 8               	7               	24              	201.26      	16          	150         	0           	Open  	;
+ 9               	24              	8               	132.53      	16          	150         	0           	Open  	;
+ 10              	8               	28              	144.66      	16          	150         	0           	Open  	;
+ 11              	28              	9               	175.72      	20.4        	150         	0           	Open  	;
+ 12              	9               	36              	112.17      	32.6        	150         	0           	Open  	;
+ 13              	36              	1               	210.74      	51.4        	150         	0           	Open  	;
+ 14              	1               	31              	75.41       	204.6       	150         	0           	Open  	;
+ 15              	31              	10              	181.42      	184         	150         	0           	Open  	;
+ 16              	10              	11              	146.96      	147.2       	150         	0           	Open  	;
+ 17              	11              	19              	162.69      	90          	150         	0           	Open  	;
+ 18              	19              	12              	99.64       	73.6        	150         	0           	Open  	;
+ 19              	12              	4               	52.98       	40.8        	150         	0           	Open  	;
+ 20              	2               	18              	162.97      	40.8        	150         	0           	Open  	;
+ 21              	18              	10              	83.96       	73.6        	150         	0           	Open  	;
+ 22              	10              	32              	49.82       	102.2       	150         	0           	Open  	;
+ 23              	32              	27              	78.5        	90          	150         	0           	Open  	;
+ 24              	27              	16              	99.27       	73.6        	150         	0           	Open  	;
+ 25              	16              	25              	82.29       	61.4        	150         	0           	Open  	;
+ 26              	25              	8               	147.49      	32.6        	150         	0           	Open  	;
+ 27              	3               	11              	197.32      	40.8        	150         	0           	Open  	;
+ 28              	11              	26              	83.3        	102.2       	150         	0           	Open  	;
+ 29              	26              	15              	113.8       	90          	150         	0           	Open  	;
+ 30              	15              	22              	80.82       	61.4        	150         	0           	Open  	;
+ 31              	22              	7               	340.97      	26          	150         	0           	Open  	;
+ 32              	5               	13              	77.39       	16          	150         	0           	Open  	;
+ 33              	13              	14              	112.37      	16          	150         	0           	Open  	;
+ 34              	14              	20              	37.34       	40.8        	150         	0           	Open  	;
+ 35              	20              	15              	108.85      	51.4        	150         	0           	Open  	;
+ 36              	15              	16              	182.82      	16          	150         	0           	Open  	;
+ 37              	16              	29              	136.02      	16          	150         	0           	Open  	;
+ 38              	29              	30              	56.7        	16          	150         	0           	Open  	;
+ 39              	30              	9               	124.08      	16          	150         	0           	Open  	;
+ 40              	17              	18              	234.6       	16          	150         	0           	Open  	;
+ 41              	12              	13              	203.83      	40.8        	150         	0           	Open  	;
+ 42              	19              	20              	248.05      	16          	150         	0           	Open  	;
+ 43              	14              	21              	65.19       	32.6        	150         	0           	Open  	;
+ 44              	21              	6               	210.09      	32.6        	150         	0           	Open  	;
+ 45              	21              	22              	147.57      	40.8        	150         	0           	Open  	;
+ 46              	22              	23              	103.8       	16          	150         	0           	Open  	;
+ 47              	24              	23              	210.95      	32.6        	150         	0           	Open  	;
+ 48              	23              	25              	75.08       	51.4        	150         	0           	Open  	;
+ 49              	26              	27              	180.29      	16          	150         	0           	Open  	;
+ 50              	28              	29              	149.05      	16          	150         	0           	Open  	;
+ 51              	29              	33              	215.05      	32.6        	150         	0           	Open  	;
+ 52              	32              	33              	144.44      	16          	150         	0           	Open  	;
+ 53              	33              	34              	34.74       	51.4        	150         	0           	Open  	;
+ 54              	31              	34              	59.93       	73.6        	150         	0           	Open  	;
+ 55              	34              	35              	165.67      	32.6        	150         	0           	Open  	;
+ 56              	30              	35              	119.97      	20.4        	150         	0           	Open  	;
+ 57              	35              	36              	83.17       	32.6        	150         	0           	Open  	;
+ 59              	38              	7               	10          	200         	100         	0           	Open  	;
+
+[PUMPS]
+;ID              	Node1           	Node2           	Parameters
+ 58              	37              	1               	HEAD 1	PATTERN pump_58	;
+
+[VALVES]
+;ID              	Node1           	Node2           	Diameter    	Type	Setting     	MinorLoss   
+
+[TAGS]
+
+[DEMANDS]
+;Junction        	Demand      	Pattern         	Category
+
+[STATUS]
+;ID              	Status/Setting
+
+[PATTERNS]
+;ID              	Multipliers
+;
+ demand_pattern_one_person	0.080000    	0.010000    	0.020000    	0.020000    	0.000000    	0.010000    
+ demand_pattern_one_person	0.020000    	0.020000    	0.020000    	0.250000    	0.080000    	0.070000    
+ demand_pattern_one_person	0.130000    	0.090000    	0.180000    	0.000000    	0.000000    	0.000000    
+ demand_pattern_one_person	0.000000    	0.000000    	0.000000    	0.000000    	0.000000    	0.000000    
+;
+ demand_pattern_two_person	0.050000    	0.050000    	0.050000    	0.050000    	0.030000    	0.050000    
+ demand_pattern_two_person	0.060000    	0.920000    	0.330000    	0.240000    	0.190000    	0.180000    
+ demand_pattern_two_person	0.040000    	0.000000    	0.000000    	0.000000    	0.000000    	0.000000    
+ demand_pattern_two_person	0.290000    	0.440000    	0.310000    	0.420000    	0.510000    	0.160000    
+;
+ demand_pattern_family	0.060000    	0.080000    	0.070000    	0.120000    	0.090000    	0.080000    
+ demand_pattern_family	0.430000    	0.650000    	0.520000    	0.190000    	0.160000    	0.100000    
+ demand_pattern_family	0.400000    	0.030000    	0.000000    	0.000000    	0.820000    	0.830000    
+ demand_pattern_family	0.610000    	0.230000    	0.360000    	0.580000    	0.570000    	0.160000    
+;
+ Pump_1          	1           
+;
+ Pump_0          	0           
+;
+ pump_58         	0           
+
+[CURVES]
+;ID              	X-Value     	Y-Value
+;PUMP: PUMP: PUMP: PUMP: 1
+ 1               	40.000000   	40.000000   
+
+[CONTROLS]
+
+
+
+
+[RULES]
+
+
+
+
+[ENERGY]
+ Global Efficiency  	75.0000
+ Global Price       	0.0000
+ Demand Charge      	0.0000
+
+[EMITTERS]
+;Junction        	Coefficient
+
+[QUALITY]
+;Node            	InitQual
+ 37              	1.0
+
+[SOURCES]
+;Node            	Type        	Quality     	Pattern
+
+[REACTIONS]
+;Type     	Pipe/Tank       	Coefficient
+
+
+[REACTIONS]
+ Order Bulk            	1
+ Order Tank            	1
+ Order Wall            	1
+ Global Bulk           	0.0000
+ Global Wall           	0.0000
+ Limiting Potential    	0.0000
+ Roughness Correlation 	0.0000
+
+[MIXING]
+;Tank            	Model
+
+[TIMES]
+ Duration           	24:00 
+ Hydraulic Timestep 	1:00 
+ Quality Timestep   	1:00 
+ Pattern Timestep   	1:00 
+ Pattern Start      	0:00 
+ Report Timestep    	1:00 
+ Report Start       	0:00 
+ Start ClockTime    	00:00:00 AM
+ Statistic          	NONE
+
+[REPORT]
+ Status             	Yes
+ Summary            	No
+ Page               	0
+
+[OPTIONS]
+ Units              	LPS
+ Headloss           	H-W
+ Specific Gravity   	1
+ Viscosity          	1
+ Trials             	50
+ Accuracy           	0.001
+ CHECKFREQ          	2
+ MAXCHECK           	10
+ DAMPLIMIT          	0
+ Unbalanced         	Continue 10
+ Pattern            	Pump_1
+ Demand Multiplier  	1
+ Emitter Exponent   	0.5
+ Quality            	Cloro mg/L
+ Diffusivity        	1
+ Tolerance          	0.01
+
+[COORDINATES]
+;Node            	X-Coord           	Y-Coord
+1               	7111.650          	7532.360          
+2               	5679.610          	9538.830          
+3               	4862.460          	9538.830          
+4               	2750.810          	9474.110          
+5               	1852.750          	8357.610          
+6               	1974.110          	6076.050          
+7               	1974.110          	5149.680          
+8               	4235.440          	5076.860          
+9               	6411.810          	5093.040          
+10              	5412.620          	7888.350          
+11              	4510.520          	8264.560          
+12              	3033.980          	9243.530          
+13              	2301.780          	8078.480          
+14              	2944.980          	7669.900          
+15              	3786.410          	7139.970          
+16              	4830.100          	6480.580          
+17              	7099.510          	8438.510          
+18              	5505.660          	8450.650          
+19              	3563.920          	8839.000          
+20              	3167.480          	7532.360          
+21              	2730.580          	7285.600          
+22              	3511.330          	6666.670          
+23              	4097.900          	6286.410          
+24              	3337.380          	5121.360          
+25              	4530.740          	6011.330          
+26              	4215.210          	7783.170          
+27              	5194.170          	7055.020          
+28              	5218.450          	5089.000          
+29              	5622.980          	5999.190          
+30              	5950.650          	5796.930          
+31              	6614.080          	7621.360          
+32              	5380.260          	7544.500          
+33              	6318.770          	7281.550          
+34              	6549.350          	7212.780          
+35              	6585.760          	6092.230          
+36              	7152.100          	6104.370          
+37              	7669.900          	7783.170          
+38              	818.351           	5080.238          
+
+[VERTICES]
+;Link            	X-Coord           	Y-Coord
+2               	7103.560          	9555.020          
+5               	2030.740          	9579.290          
+12              	7168.280          	5097.090          
+13              	7111.650          	7500.000          
+16              	5008.090          	7953.070          
+26              	4328.480          	5687.700          
+26              	4247.570          	5404.530          
+26              	4239.480          	5234.630          
+27              	4757.280          	8745.960          
+27              	4700.650          	8592.230          
+31              	2605.180          	5275.080          
+39              	6043.690          	5687.700          
+39              	6092.230          	5614.890          
+42              	3284.790          	8402.100          
+42              	3596.280          	8199.840          
+47              	3713.590          	5788.830          
+47              	3798.540          	5792.880          
+50              	5279.130          	5404.530          
+56              	6112.460          	6100.320          
+
+[LABELS]
+;X-Coord             Y-Coord             Label & Anchor Node
+
+[BACKDROP]
+  DIMENSIONS  	1000.000          	4500.000          	8000.000          	10000.000         
+ UNITS          	Meters
+ FILE           	
+ OFFSET         	0.00            	0.00            
+
+[END]
